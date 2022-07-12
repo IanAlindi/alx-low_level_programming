@@ -1,8 +1,10 @@
-#include<stdio.h>
+#include"main.h"
+/**
+ * reset_to_98 -a function that takes a pointer to an int
+ * @n: puntero
+ * Return: (0)
+ */
 
 void reset_to_98(int *n){
-int newNumber=98;
-int *n=&newNumber;
-printf("d%",newNumber);
-return(0);
+*n=98;
 }
