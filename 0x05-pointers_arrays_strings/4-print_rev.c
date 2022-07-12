@@ -1,5 +1,4 @@
-#include<stdio.h>
-
+#include <stdio.h>
 /**
  * print_rev - toma la cadena de la funcion.
  * @s: value taken from main
@@ -7,13 +6,14 @@
  */
 void print_rev(char *s)
 {
-	int l = 0;
-	char str;
+	int len;
 
-	while (*(str + l) != '\0')
+	for (len = 0; s[len] != '\0'; len++)
 	{
-		putchar(str[l]);
-		l++;
+	}
+	for (len = len - 1; len >= 0; len--)
+	{
+		putchar(s[len]);
 	}
 	putchar('\n');
 }
