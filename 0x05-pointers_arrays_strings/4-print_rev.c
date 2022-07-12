@@ -1,18 +1,18 @@
 #include<stdio.h>
+#include <unistd.h>
 /**
  * print_rev - toma la cadena de la funcion.
  * @s: value taken from main
  * Return: (0)
  */
-void print_rev(char *s)
+void _puts(char *str)
 {
-int len;
-for (len = 0; s[len] != '\0'; len++)
-{
-for (len = len - 1; len >= 0; len--)
-{
-_putchar(s[len]);
-}
-_putchar('\n');
-}
+	int l = 0;
+
+	while (*(str + l) != '\0')
+	{
+		_putchar(str[l]);
+		l++;
+	}
+	_putchar('\n');
 }
