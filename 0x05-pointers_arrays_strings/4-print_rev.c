@@ -5,7 +5,7 @@
  * @s: value taken from main
  * Return: (0)
  */
-void _puts(char *str)
+void print_rev(char *s)
 {
 	int l = 0;
 
